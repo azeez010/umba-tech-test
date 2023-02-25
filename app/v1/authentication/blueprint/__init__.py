@@ -1,6 +1,7 @@
 import jwt
 
-from flask import Blueprint, request, jsonify, make_response
+from flask import request, jsonify, make_response
+from apiflask import APIBlueprint
 
 from werkzeug.security import check_password_hash
 from datetime import datetime, timedelta
@@ -8,24 +9,16 @@ from datetime import datetime, timedelta
 from app.v1.users.models import User
 from settings.config import app
 
+from app.v1.authentication.serializers import LoginSchema
 from umba_lib.models import ModelUtilities
 
-authentication_bp = Blueprint('auth', __name__, url_prefix='/auth')
+
+authentication_bp = APIBlueprint('auth', __name__, url_prefix='/auth')
 
 
 @authentication_bp.route('/login', methods=['POST'])
-def login():
-    # creates dictionary of form data
-    auth = request.form
-
-    if not auth or not auth.get('email') or not auth.get('password'):
-        # returns 401 if any email or / and password is missing
-        return make_response(
-            {"message": "Could not verify"},
-            401,
-            {'WWW-Authenticate': 'Basic realm ="Login required !!"'}
-        )
-
+@authentication_bp.input(LoginSchema, location="form")
+def login(auth, *args, **kwargs):
     user = ModelUtilities.get(User, email=auth.get('email'))
 
     if not user:

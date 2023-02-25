@@ -11,7 +11,7 @@ class UserSchema:
         password = fields.Str(required=True, validate=[validate.Length(min=8)])
 
         class Meta:
-            exclude = ("accounts",)
+            exclude = ("accounts", "id")
             model = User
 
     class Retrieve(ma.SQLAlchemyAutoSchema):
@@ -27,5 +27,5 @@ class UserSchema:
         last_name = fields.Str(required=False)
 
         class Meta:
-            exclude = ("accounts",)
+            exclude = ("accounts", "id")
             model = User

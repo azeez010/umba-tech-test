@@ -1,11 +1,12 @@
-from flask import Flask
+from apiflask import APIFlask
 from umba_lib.helpers.env import Environ, env
 from pathlib import Path
+
 import os
 
 
 def create_app(is_test=False):
-    flask_app = Flask(__name__)
+    flask_app = APIFlask(__name__)
 
     Environ.read(os.path.join(Path(__file__).resolve(strict=True).parent.parent, "env", ".env"))
 

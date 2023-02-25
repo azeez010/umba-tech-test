@@ -29,7 +29,7 @@ class TestTransactions:
     def test_credit(self, app, mocker, account, client, amount, top_up_amount):
         """
         the my_ip is mocked cos it an external call
-        the first assert returns 400 cos negative integer is not allowed as amount in request body
+        the first assert returns 422 cos negative integer is not allowed as amount in request body, It is 422 because apiflask returns 422 on validation error
         the second assert credit the account and check if it was successful, it also check if the new balance is incremented by the amount deposited
         The last assert credits the wallet with another deposit, it also check if the new balance is incremented by the amount deposited
         """
@@ -37,7 +37,7 @@ class TestTransactions:
         account_data, login = account
 
         response = self.credit_account(client, login, account_data.get("id"), -abs(amount))
-        assert response.status_code == 400
+        assert response.status_code == 422
 
         response = self.credit_account(client, login, account_data.get("id"), amount)
         account_data = self.get_account_data(client, login, account_data.get("id"))
@@ -53,7 +53,7 @@ class TestTransactions:
     def test_debit(self, app, mocker, account, client, initial_amount, amount):
         """
         the my_ip is mocked cos it an external call
-        the first assert returns 400 cos negative integer is not allowed as amount in request body
+        the first assert returns 422 cos negative integer is not allowed as amount in request body, It is 422 because apiflask returns 422 on validation error
         the second assert credit the account with an initial amount and then debit some amount from it
         it checks if the new account balance reflects the former, it also check if the debit was successful (200 OK)
         The last assert trys to debit the account with money it doesn't have, it is expect for this transaction to fail
@@ -63,7 +63,7 @@ class TestTransactions:
         account_data, login = account
 
         response = self.debit_account(client, login, account_data.get("id"), -abs(amount))
-        assert response.status_code == 400
+        assert response.status_code == 422
 
         self.credit_account(client, login, account_data.get("id"), initial_amount)
         response = self.debit_account(client, login, account_data.get("id"), amount)

@@ -1,7 +1,7 @@
 class TestAccount:
     def test_get_account(self, app, login, client):
         response = client.get("/api/v1/account/")
-        assert response.status_code == 403
+        assert response.status_code == 401
 
         response = client.get("/api/v1/account/", headers={
             "Authorization": "Bearer %s" % login
@@ -11,7 +11,7 @@ class TestAccount:
 
     def test_create_account(self, app, login, client):
         response = client.post("/api/v1/account/")
-        assert response.status_code == 403
+        assert response.status_code == 401
 
         response = client.post("/api/v1/account/", headers={
             "Authorization": "Bearer %s" % login

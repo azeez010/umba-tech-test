@@ -27,7 +27,7 @@ class AccountSchema:
         account_type = fields.Enum(AccountType)
 
         class Meta:
-            exclude = ("transactions",)
+            exclude = ("transactions", "id", "account_balance")
             model = Account
 
     class Transact(ma.SQLAlchemySchema):

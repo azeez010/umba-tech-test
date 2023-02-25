@@ -7,6 +7,21 @@ from settings.config import app
 from app.v1.users.models import User
 from umba_lib.models import ModelUtilities
 
+from apiflask import HTTPTokenAuth
+
+http_token_auth = HTTPTokenAuth(scheme='Bearer')
+
+
+@http_token_auth.verify_token
+def verify_token(token):
+    try:
+        # decoding the payload to fetch the stored details
+        data = jwt.decode(token, app.config.get('SECRET_KEY'), algorithms=["HS256"])
+        current_user = ModelUtilities.get(User, email=data['email'])
+        return current_user
+    except:
+        pass
+
 
 class AuthUtils:
     @staticmethod
@@ -14,7 +29,6 @@ class AuthUtils:
         @wraps(f)
         def decorated(*args, **kwargs):
             token = None
-
             if request.headers.get("Authorization"):
                 token = request.headers.get("Authorization").split(" ")[-1].strip()
 

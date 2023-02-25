@@ -1,0 +1,1025 @@
+```
+.\
+│
+├── .git\
+│   │
+│   ├── hooks\
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   └── update.sample
+│   │
+│   ├── info\
+│   │   └── exclude
+│   │
+│   ├── logs\
+│   │   │
+│   │   ├── refs\
+│   │   │   │
+│   │   │   ├── heads\
+│   │   │   │   └── master
+│   │   │   │
+│   │   │   └── remotes\
+│   │   │       │
+│   │   │       └── origin\
+│   │   │           ├── HEAD
+│   │   │           └── master
+│   │   │
+│   │   │
+│   │   │
+│   │   └── HEAD
+│   │
+│   ├── objects\
+│   │   │
+│   │   ├── 00\
+│   │   │   └── 59126287033b6d54806fc9013a01e9729b06ba
+│   │   │
+│   │   ├── 01\
+│   │   │   ├── 0b087ce591e15bfd577cecc77b3ff1a8d23b15
+│   │   │   └── 416662bdd8e53ce45a72fcc09a36b1564ed16e
+│   │   │
+│   │   ├── 03\
+│   │   │   ├── 7092fa89fe7bb18762e0200015662fddfc2d5f
+│   │   │   └── 744e54658d3d39baf2d6510d567c96604f8cfd
+│   │   │
+│   │   ├── 06\
+│   │   │   └── f4eaca6c6da2b80c3e35c1052d5f3937715434
+│   │   │
+│   │   ├── 07\
+│   │   │   └── dc1500e040beaedd07f4165d3a48dab8324bd5
+│   │   │
+│   │   ├── 08\
+│   │   │   ├── 711ccbecf8a043814b0b185173dc839aa20094
+│   │   │   └── f9b8a68dc8552ce5322d879b708d29a6940868
+│   │   │
+│   │   ├── 09\
+│   │   │   └── 047e486137a7d89a2bd44e465eb650c333d5a5
+│   │   │
+│   │   ├── 0a\
+│   │   │   └── 70ad7073447400a69b6d561c091f0f1216456b
+│   │   │
+│   │   ├── 0c\
+│   │   │   └── 821ff41bbb55fa2536c949bf6cf2e2cf4dd66e
+│   │   │
+│   │   ├── 0d\
+│   │   │   ├── 9e02b8fbdfc3639275ce380e91155ac421d26a
+│   │   │   └── b868e6c0dfb6ce4798a06eb10a3ff835a02410
+│   │   │
+│   │   ├── 0e\
+│   │   │   ├── 9e7c29361840b7029a17b19a9395d4e1bbc2bd
+│   │   │   ├── db15be92b72b649c5a11fa0e771bc773fa8bc4
+│   │   │   └── e2ab541ec81cea45378e18b7d4692e501dfedc
+│   │   │
+│   │   ├── 0f\
+│   │   │   └── 6bf7439f598200ba39d1aed2866bfec3e49c91
+│   │   │
+│   │   ├── 12\
+│   │   │   └── 6232b2123f1301105cb35bf31588526edb6094
+│   │   │
+│   │   ├── 14\
+│   │   │   └── b95ae8f07200d776633e30e5c5c8797ae78c37
+│   │   │
+│   │   ├── 15\
+│   │   │   └── 0b502a52fa303fae2425a875551d3a91291991
+│   │   │
+│   │   ├── 19\
+│   │   │   └── 0a296edaf71dae9ecc8673df1be03f7c484cef
+│   │   │
+│   │   ├── 1d\
+│   │   │   ├── d4829c67449fd19977b1d7bedffecfddce681e
+│   │   │   └── db3e566ab0271e81ab59435564eab380c35a63
+│   │   │
+│   │   ├── 1f\
+│   │   │   └── 3ad10405ce05c03485124e90134bd39be72219
+│   │   │
+│   │   ├── 20\
+│   │   │   └── 03beba8c698e0071c565ecbc2bf01f1c866f4a
+│   │   │
+│   │   ├── 23\
+│   │   │   └── 663ff2f54e6c4425953537976b175246c8a9e6
+│   │   │
+│   │   ├── 25\
+│   │   │   └── b0f3b152172049efff4bdeb9bf68b0d90fc220
+│   │   │
+│   │   ├── 26\
+│   │   │   └── 0ae2483c8350bd428375a632af7f07a05a3664
+│   │   │
+│   │   ├── 27\
+│   │   │   ├── 3d73d5d0b6712805022be3af27953177abc32e
+│   │   │   └── 925dfd8c5d37e94efbb17721e6f47bca66369c
+│   │   │
+│   │   ├── 28\
+│   │   │   └── 5627e0c696395ac77f6c9cb7aae03e0cfd0f21
+│   │   │
+│   │   ├── 29\
+│   │   │   └── d9395949102569dc6ab719d134ffc96e424fac
+│   │   │
+│   │   ├── 2c\
+│   │   │   └── 0156303a8df3ffdc9de87765bf801bf6bea4a5
+│   │   │
+│   │   ├── 2d\
+│   │   │   └── 191d92db9da61b2a18c2da8f1900112ca421eb
+│   │   │
+│   │   ├── 2f\
+│   │   │   └── 3773c0866841eb5c2239aa25c36321f339b9a5
+│   │   │
+│   │   ├── 36\
+│   │   │   └── e89330b168d10967cd8482c3e9e8eb05da9d01
+│   │   │
+│   │   ├── 38\
+│   │   │   └── 40853236fed81cb95c33ed9f828cddcf68f5b9
+│   │   │
+│   │   ├── 39\
+│   │   │   ├── 1ae7ae86e75955a0acaf3e2c6a362aa251e4fb
+│   │   │   └── d1bd0d04cb398417dc641b6678d33ab7bc79af
+│   │   │
+│   │   ├── 3b\
+│   │   │   └── 169fc0e65f603254c5d8f0516fe8441f5fab71
+│   │   │
+│   │   ├── 3e\
+│   │   │   └── 5136d037ea69a857d73e6a0bc19601ff159dd6
+│   │   │
+│   │   ├── 3f\
+│   │   │   ├── 1aa94adb93d0f6caef875c48e15e7776263ee2
+│   │   │   ├── 270edf462c3ab671ea5fe2fa6cc148f1c8d1dd
+│   │   │   └── 5a6c74991125deeca3ad8e619d0c300cdebd3d
+│   │   │
+│   │   ├── 40\
+│   │   │   └── 368fb6939a9d7f7ccb2092a9ffdde71e22628b
+│   │   │
+│   │   ├── 41\
+│   │   │   ├── 120b24b4d599f93f06c5c90c67f2d50b4defba
+│   │   │   ├── 9a4c7cfcdf90fa69a3f20ac424ab71405cbc52
+│   │   │   └── c382866348ae53247c5d00ea88c993548ff20e
+│   │   │
+│   │   ├── 43\
+│   │   │   └── d7cfca9553a533526995f7c4b5c97996b0f16d
+│   │   │
+│   │   ├── 44\
+│   │   │   ├── 1173dba71371cd0ec5750d3c12c31d8f4cc8bf
+│   │   │   └── db4f45f3eae2a41e1ac0288ca4ebbe8dacb040
+│   │   │
+│   │   ├── 45\
+│   │   │   ├── 044a4d63ce6c10f70052a93f03dbd20be2b0c9
+│   │   │   └── 7306bcc1627317719c3885f5ef3c4eb18c8d4e
+│   │   │
+│   │   ├── 4a\
+│   │   │   ├── 8dee568ed6c2d2dfb6559d9f3fe0cd4b68c386
+│   │   │   └── e17a0b98cbd6983bed85f5c68f72ad823e6485
+│   │   │
+│   │   ├── 4b\
+│   │   │   └── c094875d723c3fd7e559b185559bba3ac9fc8e
+│   │   │
+│   │   ├── 4f\
+│   │   │   └── 49a29d9c0c816933c372301b8d7ea178f4306c
+│   │   │
+│   │   ├── 51\
+│   │   │   ├── 3afec3e1aebb7e8cf048b331a4c28491c62dc1
+│   │   │   ├── 43d9027332b805433db0c1af128c1288991876
+│   │   │   ├── 466f0647ccdcfc8740ed941e0a74d67a5c354c
+│   │   │   └── 9bb8a051f64b2e2b7a42f898c19fcee160d234
+│   │   │
+│   │   ├── 52\
+│   │   │   ├── 5a169b7421ba1b09a44b9d2127bfc71d6be5d7
+│   │   │   ├── c3197ca9580ae83a89c083fbf5c0c730c08a10
+│   │   │   └── cde89e30b3f0e8a4c4d2efb94c1c9b3c40a5de
+│   │   │
+│   │   ├── 53\
+│   │   │   └── 8d6bd085c4a9e63c33ee7bb9c3fa4e4915c19a
+│   │   │
+│   │   ├── 55\
+│   │   │   └── b9446efd27cd8368a9fd69738d7770e75b0c52
+│   │   │
+│   │   ├── 56\
+│   │   │   ├── d2a1114f66d1740424b37e4e10ab619707c305
+│   │   │   └── f070d1f9de2f3a7cbbfdad21bec4846ffb6081
+│   │   │
+│   │   ├── 57\
+│   │   │   ├── 54725dd8db0b7090cd0bdaa78c8dd073c1e38b
+│   │   │   └── 9006ef52447ab54ac1bf7544a39e5633014278
+│   │   │
+│   │   ├── 59\
+│   │   │   └── 8130682a66f31861ec05be139966496021b53f
+│   │   │
+│   │   ├── 5a\
+│   │   │   └── cc48eb0c43e5b4e9d6e1ce39444b721f59773d
+│   │   │
+│   │   ├── 5b\
+│   │   │   └── 7928e68ea68edf2b79b8ea130bf9cb13f94bfc
+│   │   │
+│   │   ├── 5d\
+│   │   │   └── c20aa5d4f2efe4b5842bdd829fc10f8b74f0ea
+│   │   │
+│   │   ├── 5f\
+│   │   │   └── 08c9a7b9c8a1f4f4529f8516c798eac06543d3
+│   │   │
+│   │   ├── 61\
+│   │   │   ├── b8792fb4fcd8538934e9a8bc73005a9a865e42
+│   │   │   └── de068b5d33d65275511f99768bcf4bb97b8c70
+│   │   │
+│   │   ├── 62\
+│   │   │   ├── 7a6b4ee079caad95a5297b156683f87a092a99
+│   │   │   └── f95b074b173f1a375c013a668703fe277cce48
+│   │   │
+│   │   ├── 63\
+│   │   │   ├── 11685bad05bce6ae7ccb5813abcbc207987d4d
+│   │   │   └── 83d960f25f98d76c8d5ff7782ea2a4a7ade546
+│   │   │
+│   │   ├── 65\
+│   │   │   └── 11c38afc3e9f15bcc3956184f88fa74a755e4b
+│   │   │
+│   │   ├── 66\
+│   │   │   ├── 11ce1d5e8dc4c4e0fb4177d3f135010f97c0b0
+│   │   │   ├── 7f7345662ece416d4bb26fa65f1773d5916105
+│   │   │   ├── 7ffee3ef2f9216128efb274d7a7fcb50747e11
+│   │   │   └── d4237ae6fe34c6365912bff02ddb4e679200fb
+│   │   │
+│   │   ├── 67\
+│   │   │   ├── 167c1940095e2ff2a60d367e7b8906f5897a39
+│   │   │   └── ba6087d82b1b235b28802950388315f88a103d
+│   │   │
+│   │   ├── 68\
+│   │   │   ├── 63ca96051ca8a8110b303d06ca8a8641f2b1c9
+│   │   │   └── b34f95e1fc0833520dd9e54fedadba0c0e1088
+│   │   │
+│   │   ├── 69\
+│   │   │   ├── 444437e901fe592b246a81041b06dcf26e5ceb
+│   │   │   └── 943e631671bbd90c1c6f301f02c80e991958b4
+│   │   │
+│   │   ├── 6a\
+│   │   │   ├── b4e319a5062f784be5a08798b29b9f769171fd
+│   │   │   └── b6f03259441e051ec3d60f3869691356893a34
+│   │   │
+│   │   ├── 6b\
+│   │   │   └── 9a6c7bbaf75b47f0444a896296ec655b50b2a8
+│   │   │
+│   │   ├── 6d\
+│   │   │   └── 02aed6248a249deb7eaf8473a0659a15114f86
+│   │   │
+│   │   ├── 6f\
+│   │   │   └── 6f7254d73c4b12bb6a4c09bff8dc4bf8c5aee1
+│   │   │
+│   │   ├── 70\
+│   │   │   └── b8989a2567dd6a2d13ebbce6f4f7a11b28557c
+│   │   │
+│   │   ├── 71\
+│   │   │   └── 0e5781a38db23ecc8fa90252fa825f469acbed
+│   │   │
+│   │   ├── 73\
+│   │   │   └── ff58264b1b5895fcbe55d305af18bcc062d50c
+│   │   │
+│   │   ├── 74\
+│   │   │   └── bafa691500f759982491a4637517f1e11a8a57
+│   │   │
+│   │   ├── 75\
+│   │   │   ├── 0b2519a505346708a8b79620c6e749d6824dd2
+│   │   │   └── 274c648af41f46e2b97b612138f51585bf7353
+│   │   │
+│   │   ├── 78\
+│   │   │   ├── 996359bbb84a5617b01474fc45e92ee1901b20
+│   │   │   └── aea36728748709287b1b526c26430ffac20ab0
+│   │   │
+│   │   ├── 7a\
+│   │   │   └── 6f4b893695c423414093911574a8217b4196bf
+│   │   │
+│   │   ├── 7b\
+│   │   │   └── 4d079c5b8d201f1fd7daabab14a12e8b9fc728
+│   │   │
+│   │   ├── 7c\
+│   │   │   └── 030f1449eadae9ee6c033fc9b31bd5282108af
+│   │   │
+│   │   ├── 7d\
+│   │   │   ├── 4a82a0241200ac5e9d8f8cd72daaf0cb568301
+│   │   │   ├── 4fd8b17de45a0bdff3ba1353e5fa370a108b8b
+│   │   │   └── a60c232d277a14ed39fc41e352d95992b084c8
+│   │   │
+│   │   ├── 7e\
+│   │   │   └── b304354a0d09c1025f25e1395bdd0459bda1c7
+│   │   │
+│   │   ├── 7f\
+│   │   │   └── 375789f14d9db67551b3981fb5b136849180ad
+│   │   │
+│   │   ├── 80\
+│   │   │   └── 9824bde37a2002ccbeeaa6feb1e187e83790c9
+│   │   │
+│   │   ├── 82\
+│   │   │   ├── 02e0cdd374dc964f1b126d61aead6d34ef3417
+│   │   │   ├── 25c5927296028dbce5b9f4b6d3939414d19bb5
+│   │   │   └── c03f9bd506bfc99dd036ad4286f1eb96350f8e
+│   │   │
+│   │   ├── 83\
+│   │   │   └── 5b5f5edb285db126ba7ec3e3bdcf00055b3556
+│   │   │
+│   │   ├── 84\
+│   │   │   ├── 0e222b653bf4cf109f18e0c6378147ce0cb4b8
+│   │   │   └── f6580c10ccc8428e1059e02693a5b38eea9bb8
+│   │   │
+│   │   ├── 89\
+│   │   │   └── 545303e24571f8716274d66af2b17ff14549fc
+│   │   │
+│   │   ├── 8a\
+│   │   │   ├── 679900f2147e843898187cd7d31802b1d41960
+│   │   │   └── abd7f44c4630691fff124335020e1546531a93
+│   │   │
+│   │   ├── 8b\
+│   │   │   └── 5807ebfe722c085e9b0e820efbc2b9248afdc1
+│   │   │
+│   │   ├── 8d\
+│   │   │   ├── 2f29e7be8954092396c55af9bb3563ae46900c
+│   │   │   └── 91005fd9c7fba471e97ebfde0b73b3e379b3df
+│   │   │
+│   │   ├── 8e\
+│   │   │   ├── 64a5b94eac4f469287de03cb9aff1206e59a93
+│   │   │   └── 912c834904d3fee20f6048b4d80c4d58c5a28d
+│   │   │
+│   │   ├── 90\
+│   │   │   ├── 3823d8c2fa222545a7b7b676337d44b774b572
+│   │   │   └── fec2cb02ba95b2b236b18ac284092831fd92b6
+│   │   │
+│   │   ├── 91\
+│   │   │   ├── 5f24dbc9d8d73129fb958098d07822a68cdc3a
+│   │   │   └── 78a735f0973b1d983af045af10cc0e9fcf77a9
+│   │   │
+│   │   ├── 92\
+│   │   │   └── c6f61ea1d3993d136fbb48934b95c0c237ab24
+│   │   │
+│   │   ├── 94\
+│   │   │   ├── 8d6b637b68a07e07a55b4447856f4aea1a5d07
+│   │   │   └── caae598eae7fabb01a0e59e156c4cb87f21ae5
+│   │   │
+│   │   ├── 98\
+│   │   │   ├── aced67d63f88063d7ce60cd77501b893061390
+│   │   │   └── e4f9c44effe479ed38c66ba922e7bcc672916f
+│   │   │
+│   │   ├── 9a\
+│   │   │   └── acfdf85bd2a44f1073185305fcc244b249b91e
+│   │   │
+│   │   ├── 9d\
+│   │   │   ├── 1dcfdaf1a6857c5f83dc27019c7600e1ffaff8
+│   │   │   ├── 2c7f5386c7365f6f18c39f843b21ac27c11a62
+│   │   │   └── cd5b6cc56f62d6e412514c07cf5962dc5376d7
+│   │   │
+│   │   ├── 9e\
+│   │   │   ├── e3d0b82f599f0179a7ea7450fa7d657267e403
+│   │   │   └── f4507d43fb58ef5544118cda5d2e2557e26beb
+│   │   │
+│   │   ├── 9f\
+│   │   │   └── 034d816a1ed1f654aaf73cb293c314642a9139
+│   │   │
+│   │   ├── a0\
+│   │   │   └── 54baf99476020c66c4cec01bea820351998f55
+│   │   │
+│   │   ├── a1\
+│   │   │   └── 979f1adc28339a6693fad61773d30239f082c9
+│   │   │
+│   │   ├── a2\
+│   │   │   └── f4ecf6d58dd5bc826a0e1e5eb1c50a98890ab5
+│   │   │
+│   │   ├── a3\
+│   │   │   ├── 5ccf7b6051e11970c2d906d52f60e2c0becdd1
+│   │   │   └── 853f302bee24922f68f8d24ded75f93e546184
+│   │   │
+│   │   ├── a6\
+│   │   │   └── a98c5b9866e698666d456910d3d909752cd781
+│   │   │
+│   │   ├── a7\
+│   │   │   └── cedd8a89de3a14790763368ce355407d71c367
+│   │   │
+│   │   ├── aa\
+│   │   │   └── 92b9db726d232c0d0bbe84a1f323c76e194c96
+│   │   │
+│   │   ├── ab\
+│   │   │   └── a292a7b2f238d4b2bb4783983121ce496ede57
+│   │   │
+│   │   ├── ac\
+│   │   │   ├── 20ed9204735655a585153b98c51cace2d8979e
+│   │   │   └── a05163ef8dff399fe119c2efca4266ba44e9a4
+│   │   │
+│   │   ├── ad\
+│   │   │   ├── 5d27b3072d4276e762bf38dd3963f67797965a
+│   │   │   └── 9d53ba5dae1ae7378c25d0e6a2d387fbd13bb3
+│   │   │
+│   │   ├── ae\
+│   │   │   └── 0e7f125ba1bf231ffb4cd62130124416e59220
+│   │   │
+│   │   ├── b1\
+│   │   │   ├── 428ba6a843a57752b5490337052c817c95993d
+│   │   │   ├── 6fb06ad7147ae0a8b38f4a2839beb1c7db5514
+│   │   │   └── d569693dc90fae6346ed8adbeb0a9b7318bab5
+│   │   │
+│   │   ├── b2\
+│   │   │   ├── 4b457ea434116df1093fcabb76ac2485169ee9
+│   │   │   └── d5ecc1079e8fab261697638aafd02721fb3ebc
+│   │   │
+│   │   ├── b5\
+│   │   │   └── 2a820a9382a5ceb87c5ca29908762da14f5f1c
+│   │   │
+│   │   ├── b8\
+│   │   │   └── 961b3b77f5ce6cf8b93a1bab289be86fa820af
+│   │   │
+│   │   ├── b9\
+│   │   │   └── da01d0cb0e707818771c6ee074924956495e9b
+│   │   │
+│   │   ├── bb\
+│   │   │   ├── 437d5373621f0fd56c93e191165eace1462ea9
+│   │   │   └── 77140fcee4882cc3e95c0d8e6f6d383e9e8477
+│   │   │
+│   │   ├── bc\
+│   │   │   └── 74142e32d732f56f116f4a40eaa41d208afd8c
+│   │   │
+│   │   ├── be\
+│   │   │   ├── 3c15c78884b8c79e961da65a7c9c075111f372
+│   │   │   └── a9e9ebbfd4e229d5d421963a5a8e9f1e0487ba
+│   │   │
+│   │   ├── c0\
+│   │   │   └── 37913af8342ad3dd5f1bc6aa3a1a701effe351
+│   │   │
+│   │   ├── c1\
+│   │   │   └── 64a74371dc39ed4b69749ee9ec996ab8c42beb
+│   │   │
+│   │   ├── c2\
+│   │   │   └── 458bdc9bc0d6e79ae4b8eb673f8ed04dd1d03a
+│   │   │
+│   │   ├── c4\
+│   │   │   ├── 069737a2b2e5f8b6d47f07744977d4ef8a3e01
+│   │   │   └── fb3b84bab61e13de5ddb0d46f4b3da0dbf6714
+│   │   │
+│   │   ├── c5\
+│   │   │   ├── 94367f1375a48a662a6c819e477a95d0207d06
+│   │   │   └── d8383cfeb014714f5ae59b404952a73bd23227
+│   │   │
+│   │   ├── c7\
+│   │   │   └── 67e3ffb3eabdae27dc78314089b735c465b42b
+│   │   │
+│   │   ├── c8\
+│   │   │   └── 0eb53d98250597189d3b0e0611890510ad28af
+│   │   │
+│   │   ├── cb\
+│   │   │   └── 4b0b21db587358d1c9ad37ea69c7202a47b140
+│   │   │
+│   │   ├── cc\
+│   │   │   └── 2a68bd2900aad47e0a4d0c37ccfa4c51261887
+│   │   │
+│   │   ├── cd\
+│   │   │   └── 5f5be51fd29684263cc6d8e971321fab255c89
+│   │   │
+│   │   ├── ce\
+│   │   │   └── a961239493e9360af615d2b494f828ad505d77
+│   │   │
+│   │   ├── d2\
+│   │   │   └── a2da061e31c78a1945912f2cd8b9dee677978d
+│   │   │
+│   │   ├── d3\
+│   │   │   └── 8439b5938c0209c4c9e0d532cf264cd188235f
+│   │   │
+│   │   ├── d5\
+│   │   │   ├── afc7c64ebad358f1be60b20ef353f7bd075017
+│   │   │   └── cadb895f796e6051f32c77c6212df6c6bfafc7
+│   │   │
+│   │   ├── d9\
+│   │   │   ├── 0101a26272366ef521dae2e9d3f70b75d8c9ea
+│   │   │   ├── 346f5882b93803f36f3fa94eb7e5c85cd1fff6
+│   │   │   └── c1cc5fb58ae9a7e3eeeccbda36c853cb58ba75
+│   │   │
+│   │   ├── da\
+│   │   │   └── 1d45243a1bc8773ea1e247bfee842006f5a3db
+│   │   │
+│   │   ├── db\
+│   │   │   └── c4881ffb7ea53c2f0acff97416fafca7c94ba4
+│   │   │
+│   │   ├── dc\
+│   │   │   └── 9647369049e7859c6b793a975ca3767d67334b
+│   │   │
+│   │   ├── e0\
+│   │   │   └── a19d374de20f75ca9d33e781cafdd3c914ca3e
+│   │   │
+│   │   ├── e5\
+│   │   │   ├── 7aeb97338d6a2f6f4043b51913bc5a1abc663d
+│   │   │   └── 9ff3ab0e215bda6e1115ac7962cb12a8499576
+│   │   │
+│   │   ├── e6\
+│   │   │   ├── 7624bad035d39adef5526e465607293fe4fa0a
+│   │   │   └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+│   │   │
+│   │   ├── e7\
+│   │   │   ├── 461f6d69462c5fff6ef9a665cef894068ebb26
+│   │   │   ├── f01262561e2a7a1c4776fed423431ee28820d5
+│   │   │   └── f8fba53570f54c8681bc4e734f718a0b25ef02
+│   │   │
+│   │   ├── e8\
+│   │   │   └── 2b00e1d575d58cecd10329e7b6e54adade0f42
+│   │   │
+│   │   ├── e9\
+│   │   │   └── 7cbfbb7ea5980e787cc3d0cb6146ab5360cbf7
+│   │   │
+│   │   ├── ea\
+│   │   │   ├── 7a868b3593769c2ecc2cd1502d171ac3a61439
+│   │   │   ├── 8ec82acfc0146390b18d9944695120841fb8ec
+│   │   │   └── b4ca140111b46e0460613238060faa3119185b
+│   │   │
+│   │   ├── eb\
+│   │   │   └── 6e15cfbd1e303cc9035a19de3c5d2f0355cac4
+│   │   │
+│   │   ├── ed\
+│   │   │   └── 30748c9d688f66cc781fb3ae710507a78f7d74
+│   │   │
+│   │   ├── ee\
+│   │   │   ├── 39f4927c71ddec81b9d5282da4f38fbf7b9351
+│   │   │   └── d3b56192cf1e2ce8c8642b2dcb4d1c2ddf421e
+│   │   │
+│   │   ├── ef\
+│   │   │   ├── 42dfb3492a9a3b104aa58f545bc9f40a01f3f7
+│   │   │   ├── 47096559d1ebb9d93b223669b0010d0284ea4b
+│   │   │   └── 600373f82d3d5622692c0b3385da1b50c70cbb
+│   │   │
+│   │   ├── f1\
+│   │   │   └── ce64c25f55ff2bc2ef33ecfb9358f8895bf173
+│   │   │
+│   │   ├── f3\
+│   │   │   ├── 43e58e6e0921619532b0ab369e5b3116eb7416
+│   │   │   └── d68791619b79314d4762f345784fca4247af4c
+│   │   │
+│   │   ├── f4\
+│   │   │   └── 56bd762a8a1e73f28341f36b37abc5a9bbba4a
+│   │   │
+│   │   ├── f8\
+│   │   │   ├── 67b2e55aedd5e1cc14242e1afa5064f9ed2498
+│   │   │   └── ed4801f78bcb83cc6acb589508c1b24eda297a
+│   │   │
+│   │   ├── f9\
+│   │   │   └── 59b78a2c211bf44437d8f1f19f112f9d69403b
+│   │   │
+│   │   ├── fc\
+│   │   │   └── 772a8959463ce8f5fd122af8dae8afd707cf1b
+│   │   │
+│   │   ├── fd\
+│   │   │   ├── adec7121159e0408df165e5b506578d4dbeb57
+│   │   │   └── d2bc77adf2734f0067a583160aabdea8e84643
+│   │   │
+│   │   ├── fe\
+│   │   │   └── 8ad6fb29e3b6e31c3bae0a9e1032c1ca253118
+│   │   │
+│   │   ├── info\
+│   │   │
+│   │   └── pack\
+│   │
+│   │
+│   ├── refs\
+│   │   │
+│   │   ├── heads\
+│   │   │   └── master
+│   │   │
+│   │   ├── remotes\
+│   │   │   │
+│   │   │   └── origin\
+│   │   │       ├── HEAD
+│   │   │       └── master
+│   │   │
+│   │   │
+│   │   └── tags\
+│   │
+│   │
+│   ├── COMMIT_EDITMSG
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── config
+│   ├── description
+│   └── index
+│
+├── .idea\
+│   │
+│   ├── inspectionProfiles\
+│   │   ├── Project_Default.xml
+│   │   └── profiles_settings.xml
+│   │
+│   ├── .gitignore
+│   ├── aws.xml
+│   ├── misc.xml
+│   ├── modules.xml
+│   ├── umba.iml
+│   ├── vcs.xml
+│   └── workspace.xml
+│
+├── .pytest_cache\
+│   │
+│   ├── v\
+│   │   │
+│   │   └── cache\
+│   │       ├── lastfailed
+│   │       ├── nodeids
+│   │       └── stepwise
+│   │
+│   │
+│   ├── .gitignore
+│   ├── CACHEDIR.TAG
+│   └── README.md
+│
+├── __pycache__\
+│   ├── main.cpython-310.pyc
+│   └── main.cpython-39.pyc
+│
+├── app\
+│   │
+│   ├── __pycache__\
+│   │   ├── __init__.cpython-310.pyc
+│   │   └── __init__.cpython-39.pyc
+│   │
+│   ├── v1\
+│   │   │
+│   │   ├── __pycache__\
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   └── __init__.cpython-39.pyc
+│   │   │
+│   │   ├── accounts\
+│   │   │   │
+│   │   │   ├── __pycache__\
+│   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │
+│   │   │   ├── blueprint\
+│   │   │   │   │
+│   │   │   │   ├── __pycache__\
+│   │   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │   │
+│   │   │   │   └── __init__.py
+│   │   │   │
+│   │   │   ├── models\
+│   │   │   │   │
+│   │   │   │   ├── __pycache__\
+│   │   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │   │
+│   │   │   │   └── __init__.py
+│   │   │   │
+│   │   │   ├── serializers\
+│   │   │   │   │
+│   │   │   │   ├── __pycache__\
+│   │   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │   │
+│   │   │   │   └── __init__.py
+│   │   │   │
+│   │   │   └── __init__.py
+│   │   │
+│   │   ├── authentication\
+│   │   │   │
+│   │   │   ├── __pycache__\
+│   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │
+│   │   │   ├── blueprint\
+│   │   │   │   │
+│   │   │   │   ├── __pycache__\
+│   │   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │   │
+│   │   │   │   └── __init__.py
+│   │   │   │
+│   │   │   ├── serializers\
+│   │   │   │   │
+│   │   │   │   ├── __pycache__\
+│   │   │   │   │   └── __init__.cpython-310.pyc
+│   │   │   │   │
+│   │   │   │   └── __init__.py
+│   │   │   │
+│   │   │   └── __init__.py
+│   │   │
+│   │   ├── transactions\
+│   │   │   │
+│   │   │   ├── __pycache__\
+│   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │
+│   │   │   ├── blueprint\
+│   │   │   │   │
+│   │   │   │   ├── __pycache__\
+│   │   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │   │
+│   │   │   │   └── __init__.py
+│   │   │   │
+│   │   │   ├── models\
+│   │   │   │   │
+│   │   │   │   ├── __pycache__\
+│   │   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │   │
+│   │   │   │   └── __init__.py
+│   │   │   │
+│   │   │   ├── serializers\
+│   │   │   │   │
+│   │   │   │   ├── __pycache__\
+│   │   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │   │
+│   │   │   │   └── __init__.py
+│   │   │   │
+│   │   │   └── __init__.py
+│   │   │
+│   │   ├── users\
+│   │   │   │
+│   │   │   ├── __pycache__\
+│   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │
+│   │   │   ├── blueprint\
+│   │   │   │   │
+│   │   │   │   ├── __pycache__\
+│   │   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │   │
+│   │   │   │   └── __init__.py
+│   │   │   │
+│   │   │   ├── models\
+│   │   │   │   │
+│   │   │   │   ├── __pycache__\
+│   │   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │   │
+│   │   │   │   └── __init__.py
+│   │   │   │
+│   │   │   ├── serializers\
+│   │   │   │   │
+│   │   │   │   ├── __pycache__\
+│   │   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │   │
+│   │   │   │   └── __init__.py
+│   │   │   │
+│   │   │   └── __init__.py
+│   │   │
+│   │   └── __init__.py
+│   │
+│   └── __init__.py
+│
+├── migrations\
+│   │
+│   ├── __pycache__\
+│   │   └── env.cpython-310.pyc
+│   │
+│   ├── versions\
+│   │   │
+│   │   ├── __pycache__\
+│   │   │   ├── 15a320c50b8d_.cpython-310.pyc
+│   │   │   └── e2da0291ee33_.cpython-310.pyc
+│   │   │
+│   │   ├── 15a320c50b8d_.py
+│   │   └── e2da0291ee33_.py
+│   │
+│   ├── README
+│   ├── alembic.ini
+│   ├── env.py
+│   └── script.py.mako
+│
+├── requirements\
+│   ├── base.txt
+│   └── test.txt
+│
+├── settings\
+│   │
+│   ├── __pycache__\
+│   │   ├── __init__.cpython-310.pyc
+│   │   └── __init__.cpython-39.pyc
+│   │
+│   ├── config\
+│   │   │
+│   │   ├── __pycache__\
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   └── __init__.cpython-39.pyc
+│   │   │
+│   │   ├── base\
+│   │   │   │
+│   │   │   ├── __pycache__\
+│   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │
+│   │   │   └── __init__.py
+│   │   │
+│   │   ├── development\
+│   │   │   │
+│   │   │   ├── __pycache__\
+│   │   │   │   └── __init__.cpython-310.pyc
+│   │   │   │
+│   │   │   └── __init__.py
+│   │   │
+│   │   ├── production\
+│   │   │   │
+│   │   │   ├── __pycache__\
+│   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │
+│   │   │   └── __init__.py
+│   │   │
+│   │   ├── test\
+│   │   │   │
+│   │   │   ├── __pycache__\
+│   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │
+│   │   │   └── __init__.py
+│   │   │
+│   │   └── __init__.py
+│   │
+│   ├── database\
+│   │   │
+│   │   ├── __pycache__\
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   └── __init__.cpython-39.pyc
+│   │   │
+│   │   ├── __init__.py
+│   │   └── umba.sqlite3
+│   │
+│   ├── env\
+│   │   ├── .docker.env
+│   │   └── .env
+│   │
+│   ├── logging\
+│   │   └── __init__.py
+│   │
+│   └── __init__.py
+│
+├── tests\
+│   │
+│   ├── __pycache__\
+│   │   ├── __init__.cpython-310.pyc
+│   │   ├── conftest.cpython-310-pytest-7.1.2.pyc
+│   │   └── test_users.cpython-310-pytest-7.1.2.pyc
+│   │
+│   ├── v1_test\
+│   │   │
+│   │   ├── .pytest_cache\
+│   │   │   │
+│   │   │   ├── v\
+│   │   │   │   │
+│   │   │   │   └── cache\
+│   │   │   │       ├── lastfailed
+│   │   │   │       ├── nodeids
+│   │   │   │       └── stepwise
+│   │   │   │
+│   │   │   │
+│   │   │   ├── .gitignore
+│   │   │   ├── CACHEDIR.TAG
+│   │   │   └── README.md
+│   │   │
+│   │   ├── __pycache__\
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   └── conftest.cpython-310-pytest-7.1.2.pyc
+│   │   │
+│   │   ├── functional_tests\
+│   │   │   │
+│   │   │   ├── .pytest_cache\
+│   │   │   │   │
+│   │   │   │   ├── v\
+│   │   │   │   │   │
+│   │   │   │   │   └── cache\
+│   │   │   │   │       ├── lastfailed
+│   │   │   │   │       ├── nodeids
+│   │   │   │   │       └── stepwise
+│   │   │   │   │
+│   │   │   │   │
+│   │   │   │   ├── .gitignore
+│   │   │   │   ├── CACHEDIR.TAG
+│   │   │   │   └── README.md
+│   │   │   │
+│   │   │   ├── __pycache__\
+│   │   │   │   ├── test_account.cpython-310-pytest-7.1.2.pyc
+│   │   │   │   ├── test_auth.cpython-310-pytest-7.1.2.pyc
+│   │   │   │   ├── test_transactions.cpython-310-pytest-7.1.2.pyc
+│   │   │   │   └── test_users.cpython-310-pytest-7.1.2.pyc
+│   │   │   │
+│   │   │   ├── test_account.py
+│   │   │   ├── test_transactions.py
+│   │   │   └── test_users.py
+│   │   │
+│   │   ├── unit_tests\
+│   │   │   │
+│   │   │   ├── __pycache__\
+│   │   │   │   └── test_pagination.cpython-310-pytest-7.1.2.pyc
+│   │   │   │
+│   │   │   └── test_pagination.py
+│   │   │
+│   │   ├── __init__.py
+│   │   ├── conftest.py
+│   │   └── pytest.ini
+│   │
+│   └── __init__.py
+│
+├── umba_lib\
+│   │
+│   ├── __pycache__\
+│   │   ├── __init__.cpython-310.pyc
+│   │   └── __init__.cpython-39.pyc
+│   │
+│   ├── decorators\
+│   │   │
+│   │   ├── __pycache__\
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   └── __init__.cpython-39.pyc
+│   │   │
+│   │   └── __init__.py
+│   │
+│   ├── enums\
+│   │   │
+│   │   ├── __pycache__\
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   └── __init__.cpython-39.pyc
+│   │   │
+│   │   └── __init__.py
+│   │
+│   ├── errors\
+│   │   │
+│   │   ├── __pycache__\
+│   │   │   └── __init__.cpython-310.pyc
+│   │   │
+│   │   └── __init__.py
+│   │
+│   ├── external_apis\
+│   │   │
+│   │   ├── __pycache__\
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   └── __init__.cpython-39.pyc
+│   │   │
+│   │   └── __init__.py
+│   │
+│   ├── helpers\
+│   │   │
+│   │   ├── __pycache__\
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   └── __init__.cpython-39.pyc
+│   │   │
+│   │   ├── auth\
+│   │   │   │
+│   │   │   ├── __pycache__\
+│   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │
+│   │   │   └── __init__.py
+│   │   │
+│   │   ├── env\
+│   │   │   │
+│   │   │   ├── __pycache__\
+│   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │
+│   │   │   └── __init__.py
+│   │   │
+│   │   ├── pagination\
+│   │   │   │
+│   │   │   ├── __pycache__\
+│   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │
+│   │   │   └── __init__.py
+│   │   │
+│   │   ├── transactions\
+│   │   │   │
+│   │   │   ├── __pycache__\
+│   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   └── __init__.cpython-39.pyc
+│   │   │   │
+│   │   │   └── __init__.py
+│   │   │
+│   │   └── __init__.py
+│   │
+│   ├── models\
+│   │   │
+│   │   ├── __pycache__\
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   └── __init__.cpython-39.pyc
+│   │   │
+│   │   └── __init__.py
+│   │
+│   ├── schemas\
+│   │   │
+│   │   ├── __pycache__\
+│   │   │   └── __init__.cpython-310.pyc
+│   │   │
+│   │   └── __init__.py
+│   │
+│   ├── validators\
+│   │   │
+│   │   ├── __pycache__\
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   └── __init__.cpython-39.pyc
+│   │   │
+│   │   └── __init__.py
+│   │
+│   └── __init__.py
+│
+├── .coverage
+├── .gitignore
+├── Dockerfile
+├── docker-compose.yml
+├── main.py
+├── readme.md
+└── start.sh
+```
