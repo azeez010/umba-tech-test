@@ -1,0 +1,6 @@
+-r base.txt
+pytest-mock==3.10.0
+pytest==7.1.2
+coverage==7.2.0
+faker-17.3.0
+faker_sqlalchemy==0.10.2208140
